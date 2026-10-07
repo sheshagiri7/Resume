@@ -2,6 +2,7 @@
 
 A clean, modern, and print-optimized web resume built with semantic HTML5 and CSS3. Designed for both online viewing and direct PDF export (A4 format).
 
+🌐 **Live Demo (Vercel):** [https://sheshagiri-resume.vercel.app](https://sheshagiri-resume.vercel.app)  
 🌐 **Live Demo (GitHub Pages):** [https://sheshagiri7.github.io/Resume/](https://sheshagiri7.github.io/Resume/)
 
 ---
