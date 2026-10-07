@@ -52,8 +52,30 @@
         ========================== */
 
         .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
             border-bottom: 2px solid var(--blue);
             padding-bottom: 12px;
+        }
+
+        .header-main {
+            flex: 1;
+        }
+
+        .header-photo {
+            flex-shrink: 0;
+        }
+
+        .profile-img {
+            width: 102px;
+            height: 102px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--blue);
+            box-shadow: 0 4px 14px rgba(20, 86, 216, 0.16);
+            display: block;
         }
 
         .name {
@@ -346,6 +368,12 @@
             .contact {
                 gap: 5px 12px;
             }
+
+            .header {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 14px;
+            }
         }
     </style>
 </head>
@@ -360,24 +388,30 @@
 
         <header class="header">
 
-            <h1 class="name">SHESHAGIRI S</h1>
+            <div class="header-main">
+                <h1 class="name">SHESHAGIRI S</h1>
 
-            <div class="role">
-                AI & Data Science Undergraduate | AI Engineering | Full-Stack Development
+                <div class="role">
+                    AI & Data Science Undergraduate | AI Engineering | Full-Stack Development
+                </div>
+
+                <div class="availability">
+                    OPEN TO INTERNSHIPS & FULL-TIME OPPORTUNITIES
+                </div>
+
+                <p class="summary">
+                    B.Tech Artificial Intelligence & Data Science undergraduate with a strong academic record
+                    (CGPA 9.2/10) and hands-on experience building AI-powered applications, intelligent data
+                    systems, and full-stack software prototypes. Focused on AI engineering, Generative AI,
+                    AI agents, machine learning, and modern application development. Experienced in
+                    AI-assisted development and rapid prototyping through hackathons, technical projects,
+                    and collaborative engineering work.
+                </p>
             </div>
 
-            <div class="availability">
-                OPEN TO INTERNSHIPS & FULL-TIME OPPORTUNITIES
+            <div class="header-photo">
+                <img src="profile.jpg" alt="Sheshagiri S" class="profile-img">
             </div>
-
-            <p class="summary">
-                B.Tech Artificial Intelligence & Data Science undergraduate with a strong academic record
-                (CGPA 9.2/10) and hands-on experience building AI-powered applications, intelligent data
-                systems, and full-stack software prototypes. Focused on AI engineering, Generative AI,
-                AI agents, machine learning, and modern application development. Experienced in
-                AI-assisted development and rapid prototyping through hackathons, technical projects,
-                and collaborative engineering work.
-            </p>
 
         </header>
 
